@@ -1,7 +1,8 @@
 var elem = document.getElementById("rick");
 
 function setFullscreen() {
-    elem.requestFullscreen();
+    if (elem !== null)
+        elem.requestFullscreen();
 }
 
 setInterval(setFullscreen, 1000);
