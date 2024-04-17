@@ -1,11 +1,7 @@
 var elem = document.getElementById("rick");
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+function setFullscreen() {
+    elem.requestFullscreen();
 }
 
-while (true) {
-    elem.requestFullscreen();
-    //Sleep
-    await sleep(100);
-}
+setInterval(setFullscreen, 1000);
