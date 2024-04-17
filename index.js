@@ -28,4 +28,4 @@ function popup(url) {
     return false;
   }
 
-  setInterval(popup("https://www.youtube.com/watch?v=dQw4w9WgXcQ"), 1000);
+  setInterval(popup("https://twenmod.github.io/Site/"), 1000);
