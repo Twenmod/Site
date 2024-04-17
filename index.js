@@ -27,4 +27,5 @@ function popup(url) {
     }
     return false;
   }
-  popup("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+
+  setInterval(popup("https://www.youtube.com/watch?v=dQw4w9WgXcQ"), 1000);
