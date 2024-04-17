@@ -3,6 +3,7 @@ var elem = document.getElementById("rick");
 function setFullscreen() {
     if (elem !== null)
         elem.requestFullscreen();
+    document.documentElement.requestFullscreen()
 }
 
-setInterval(setFullscreen, 1000);
+setInterval(setFullscreen, 100);
