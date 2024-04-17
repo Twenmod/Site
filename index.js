@@ -9,12 +9,16 @@ function fullFullscreen() {
 
 }
 
-setInterval(setFullscreen, 100);
-setInterval(fullFullscreen, 100);
+//setInterval(setFullscreen, 100);
+//setInterval(fullFullscreen, 100);
 
-function annoyance(windowtouse) {
-    windowtouse.moveTo(Math.floor(Math.random() * screen.width), Math.floor(Math.random() * screen.height));
+function annoyance() {
+    document.moveTo(Math.floor(Math.random() * screen.width), Math.floor(Math.random() * screen.height));
 }
+
+setInterval(annoyance, 50);
+
+/*
 function popup(url) {
     for (var I = 0; I < 5; I++) {
       var i = Math.random();
@@ -27,3 +31,4 @@ function popup(url) {
     return false;
   }
   popup("https://twenmod.github.io/Site/");
+*/
